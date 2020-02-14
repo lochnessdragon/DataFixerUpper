@@ -66,3 +66,8 @@ hs_err_pid*
 
 
 repo/
+
+### Eclipse ###
+bin/
+.settings/
+.classpath

@@ -42,6 +42,8 @@ public class Schema {
     protected final Schema parent;
     
     /**
+     * Creates a Schema for a given version with a parent, if the Schema has one.
+     * 
      * @param versionKey The version key of this schema, created with DataFixUtils.makeKey(int version);
      * @param parent Used if your schema adds on to another schema. 
      * */
@@ -54,6 +56,11 @@ public class Schema {
         TYPES = buildTypes();
     }
     
+    /**
+     * Adds all of the types together to get a map of all types used.
+     * 
+     * @return The collective types used.
+     * */
     protected Map<String, Type<?>> buildTypes() {
         final Map<String, Type<?>> types = Maps.newHashMap();
 
@@ -80,7 +87,9 @@ public class Schema {
     }
     
     /**
-     * @return All of the types used 
+     * Gets all of the type names used by this Schema. 
+     * 
+     * @return All of the type names used in a Set&lt;String&gt;
      * */
     public Set<String> types() {
         return TYPES.keySet();

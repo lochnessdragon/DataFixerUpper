@@ -49,7 +49,7 @@ task sourcesJar(type: Jar) {
 javadoc {
     source = sourceSets.main.allJava
     classpath = configurations.compile
-    destinationDir = file("javadoc")
+    destinationDir = file("docs")
 }
 
 sourceSets {

@@ -32,7 +32,7 @@ public interface TypeTemplate {
     }
 
     /**
-     * returned optic will accept template<family<index>> with the input template, and will return the same with the returned template
+     * returned optic will accept template&lt;family&lt;index&gt;&gt; with the input template, and will return the same with the returned template
      * (template, optic) = Left(result)
      * this.apply(family).apply(index) == optic.sType
      * template.apply(family).apply(index) == optic.tType
@@ -41,7 +41,7 @@ public interface TypeTemplate {
 
     /**
      * constraint: family, argFamily and resFamily are matched
-     * result.function(i) :: this.apply(function.argFamily()).apply(i) -> this.apply(function.resFamily()).apply(i)
+     * result.function(i) :: this.apply(function.argFamily()).apply(i) -&gt; this.apply(function.resFamily()).apply(i)
      */
     IntFunction<RewriteResult<?, ?>> hmap(final TypeFamily family, final IntFunction<RewriteResult<?, ?>> function);
 

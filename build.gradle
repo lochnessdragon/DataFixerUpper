@@ -46,6 +46,12 @@ task sourcesJar(type: Jar) {
     from sourceSets.main.allSource
 }
 
+javadoc {
+    source = sourceSets.main.allJava
+    classpath = configurations.compile
+    destinationDir = file("javadoc")
+}
+
 sourceSets {
     main {
         java {

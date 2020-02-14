@@ -71,3 +71,4 @@ repo/
 bin/
 .settings/
 .classpath
+.project

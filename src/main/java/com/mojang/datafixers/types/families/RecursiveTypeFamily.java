@@ -91,7 +91,7 @@ public final class RecursiveTypeFamily implements TypeFamily {
     }
 
     /**
-     * returns family.apply(index) -> algebra.family.apply(index)
+     * returns family.apply(index) -&gt; algebra.family.apply(index)
      */
     public IntFunction<RewriteResult<?, ?>> fold(final Algebra algebra) {
         return index -> {

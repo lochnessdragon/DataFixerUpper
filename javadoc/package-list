@@ -1,0 +1,11 @@
+com.mojang.datafixers
+com.mojang.datafixers.functions
+com.mojang.datafixers.kinds
+com.mojang.datafixers.optics
+com.mojang.datafixers.optics.profunctors
+com.mojang.datafixers.schemas
+com.mojang.datafixers.types
+com.mojang.datafixers.types.constant
+com.mojang.datafixers.types.families
+com.mojang.datafixers.types.templates
+com.mojang.datafixers.util

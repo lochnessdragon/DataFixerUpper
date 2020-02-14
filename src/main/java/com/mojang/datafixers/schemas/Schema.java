@@ -28,6 +28,10 @@ import java.util.function.Supplier;
  * 
  * Do not directly create a new Schema, you need to extend the schema with your own custom one. 
  * Then, add your types in the appropriate methods in the child class.
+ * 
+ * @author Mojang
+ * @version 1.0.20
+ * @since 1.0.19
  */
 public class Schema {
     protected final Object2IntMap<String> RECURSIVE_TYPES = new Object2IntOpenHashMap<>();

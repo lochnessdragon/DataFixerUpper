@@ -1,0 +1,12 @@
+name: Update Javadoc
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Configure javadoc
+      run: chmod +x gradlew && ./gradlew javadoc

@@ -9,4 +9,4 @@ jobs:
 
     steps:
     - name: Configure javadoc
-      run: chmod +x gradlew && ./gradlew javadoc
+      run: chmod +x ./gradlew && ./gradlew javadoc
